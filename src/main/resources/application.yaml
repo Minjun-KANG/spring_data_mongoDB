@@ -1,0 +1,24 @@
+spring:
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      authentication-database: admin
+#      username: admin
+#      password: 1234
+      database: weekerp
+      properties:
+        hibernate:
+          format_sql: true
+    datasource:
+      url: jdbc:mysql://localhost:3306/weekerp
+      username: root
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      hibernate.ddl-auto: create
+      properties:
+        hibernate:
+          format_sql: true
+      defer-datasource-initialization: true
+    sql.init.mode: always
